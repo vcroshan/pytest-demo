@@ -13,5 +13,5 @@ echo ${testfldr[@]}
 
 for i in ${testfldr[@]}; do
 	echo "executing test cases from folder ${i}"
-	python3 -m pytest $i
+	python3 -m pytest --cov-report xml $i
 done
